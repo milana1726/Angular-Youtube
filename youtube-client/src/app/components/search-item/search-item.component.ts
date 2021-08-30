@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ISearchItem } from 'src/app/models/search-item.interface';
 
 @Component({
   selector: 'app-search-item',
@@ -7,12 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchItemComponent implements OnInit {
 
-  constructor() {
-    //do nothing
-  }
+    @Input() result!: ISearchItem;
+    public publicationDate = '';
 
   ngOnInit(): void {
-    //do nothing
+    this.publicationDate = this.result.snippet.publishedAt;
   }
-
 }

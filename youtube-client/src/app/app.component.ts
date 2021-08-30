@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'youtube-client';
+  public loadedResults = false;
+
+  onDisplayResults(answer: boolean): void {
+    this.loadedResults = answer;
+  }
 }

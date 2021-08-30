@@ -3,7 +3,7 @@ import { ISearchItem } from "./search-item.interface";
 export interface ISearchResponse {
     kind: string;
     etag: string;
-    pageIngo: IPageInfo;
+    pageInfo: IPageInfo;
     items: ISearchItem[];
 }
 

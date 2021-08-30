@@ -1,1 +1,27 @@
-<p>search-item works!</p>
+<mat-card [publicationDate]="publicationDate" appBorderColor>
+  <img
+    class="search-item-image"
+    src="#"
+    alt="thumbnail-image"
+    [src]="result.snippet.thumbnails.medium.url"/>
+    <div class="statistics-container">
+      <div class="statistics-item">
+        <img src="../../../assets/views.png" alt="" />
+        <span>{{ result.statistics.viewCount }}</span>
+      </div>
+      <div class="statistics-item">
+        <img src="../../../assets/likes.png" alt="" />
+        <span>{{ result.statistics.likeCount }}</span>
+      </div>
+      <div class="statistics-item">
+        <img src="../../../assets/dislikes.png" alt="" />
+        <span>{{ result.statistics.dislikeCount }}</span>
+      </div>
+      <div class="statistics-item">
+        <img src="../../../assets/comments.png" alt="" />
+        <span>{{ result.statistics.commentCount }}</span>
+      </div>
+    </div>
+  <h2 class="title">{{ result.snippet.title }}</h2>
+  <button class="btn">more...</button>
+</mat-card>

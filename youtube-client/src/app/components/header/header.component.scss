@@ -1,0 +1,114 @@
+//---Header Section---//
+.header {
+  height: 80px;
+  background-color: #e5e5e5;
+}
+
+.header-container {
+  display: flex;
+  width: 900px;
+  align-items: center;
+  margin-left: 400px;
+}
+
+.logo {
+  margin-right: 10px;
+  width: 65px;
+}
+
+.searching-input {
+  width: 500px;
+  height: 27px;
+  border: none;
+  background: #efefef;
+  font-size: 12px;
+  color: #929292;
+  align-items: center;
+}
+
+.searching-input::placeholder {
+  padding-left: 5px;
+}
+
+.searching-btn {
+  width: 100px;
+  height: 27px;
+  background: #2f80ed;
+  border-radius: 0px 4px 4px 0px;
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: normal;
+  color: #fff;
+  margin-right: 10px;
+  filter: drop-shadow(2px 0px 4px #2f80ed);
+}
+
+.filter-btn {
+  width: 39px;
+  height: 36px;
+  cursor: pointer;
+  border: none;
+  background-image: url("../../../assets/search_settings.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 148px;
+}
+
+.login-name {
+  font-size: 14px;
+  line-height: normal;
+  text-align: right;
+  color: #4f4f4f;
+  width: 102px;
+  margin-right: 10px;
+}
+
+.login {
+  width: 36px;
+  height: 36px;
+}
+
+//---Filter Section---//
+
+.filter {
+  height: 50px;
+  background-color: #e5e5e5;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  height: 14px;
+  width: 422px;
+  justify-content: space-between;
+  margin-left: 432px;
+}
+
+.filter-by {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #929292;
+  margin-right: 11px;
+}
+
+.filter-criteria {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: normal;
+  color: #2f80ed;
+  margin-right: 21px;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.filter-input {
+  width: 149px;
+  height: 16px;
+  border: none;
+  background: #fff;
+  margin-left: -10px;
+}
